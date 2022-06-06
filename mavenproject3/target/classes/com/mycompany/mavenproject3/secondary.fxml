@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="323.0" prefWidth="493.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject3.SecondaryController">
+    <children>
+        <Label text="Order details" />
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnOrders" prefWidth="75.0" text="№" />
+          <TableColumn fx:id="columnCoffee" prefWidth="153.60002899169922" style="-fx-width: 45%;" text="Details" />
+            <TableColumn fx:id="columnCustomer" prefWidth="224.79998779296875" text="Customer" />
+        </columns>
+      </TableView>
+        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Выход" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
